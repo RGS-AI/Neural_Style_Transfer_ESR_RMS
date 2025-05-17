@@ -91,10 +91,10 @@ nst_upscale_env/
 ### Input
 
 **Content Image**  
-![Content](screenshots/landscape_content.jpg)
+![Content](screenshots/landscape.jpg)
 
 **Style Image**  
-![Style](screenshots/landscape_style.jpg)
+![Style](screenshots/landscape_Style.jpg)
 
 ### Output
 
@@ -102,7 +102,7 @@ nst_upscale_env/
 ![Stylized Output](screenshots/stylized_output.jpg)
 
 **Upscaled to 4K**  
-![Upscaled Output](screenshots/stylized_output copy_rlt.png)
+![Upscaled Output](screenshots/stylized_output_rlt.png)
 
 ***
 
