@@ -100,7 +100,7 @@ nst_upscale_env/
 **Stylized Output (512x512)**  
 ![Stylized Output](screenshots/stylized_output.jpg)
 
-**Upscaled to 4K**  
+**Upscaled to High Resolution**  
 ![Upscaled Output](screenshots/stylized_output_rlt.png)
 
 ***
