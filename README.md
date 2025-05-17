@@ -7,7 +7,7 @@ This project applies **Neural Style Transfer (NST)** to input images and then en
 ## 🚀 Key Features
 
 - Consistent **style transfer** using a reference style image.
-- High-quality **image upscaling** using Real-ESRGAN RRDB model (`realesrgan-x4plus.pth`).
+- High-quality **image upscaling** using Real-ESRGAN RRDB model (realesrgan-x4plus.pth).
 - Complete **PyTorch-based pipeline** — no Vulkan binaries required.
 - Compatible with **macOS (CPU)** and Linux.
 
@@ -26,7 +26,7 @@ nst_upscale_env/
 │
 ├── upscaling/
 │   ├── realesrgan/                  # Cloned Real-ESRGAN repo (PyTorch)
-│   ├── upscaler.py                  # Script to run the upscaler
+│   ├── test.py                      # Script to run the upscaler
 │   └── weights/
 │       └── RealESRGAN_x4plus.pth    # Pretrained RRDB model
 │
@@ -61,27 +61,28 @@ nst_upscale_env/
 
 `python NST.ipynb` #nst.py
 
-	•	This script will read content.jpg and style.jpg, then save the output as stylized_output.jpg.
+• This script will read content.jpg and style.jpg, then save the output as stylized_output.jpg.
 
 ### 🔼 Step 2: Upscale the Stylized Image
 
-Download Weights (if not already):
+**Download Weights (if not already):**
 
-Download the RealESRGAN_x4plus.pth model from the official repo:
+**Download the RealESRGAN_x4plus.pth model from the official repo:**
+
 `https://github.com/xinntao/Real-ESRGAN#model-zoo`
 
-Place it inside:
+**Place it inside:**
 
 `upscaling/realesrgan/weights/`
 
-Run Upscaler:
+**Run Upscaler:**
 
 `cd upscaling`
 
 `python upscaler.py --input ../style_transfer/stylized_output.jpg --output output_4k.png --scale 4`
 
-	•	Output image will be saved as output_4k.png.
-	•	You can change the --scale to upscale by 2, 4, or 8 as per the model.
+• Output image will be saved as output_4k.png.
+• You can change the --scale to upscale by 2, 4, or 8 as per the model.
 
 ***
 
@@ -90,10 +91,10 @@ Run Upscaler:
 ### Input
 
 **Content Image**  
-![Content](screenshots/input_content.jpg)
+![Content](screenshots/landscape_content.jpg)
 
 **Style Image**  
-![Style](screenshots/input_style.jpg)
+![Style](screenshots/landscape_style.jpg)
 
 ### Output
 
@@ -101,24 +102,25 @@ Run Upscaler:
 ![Stylized Output](screenshots/stylized_output.jpg)
 
 **Upscaled to 4K**  
-![Upscaled Output](screenshots/upscaled_output.png)
+![Upscaled Output](screenshots/stylized_output copy_rlt.png)
 
 ***
 
-⚠️ Notes
-	•	Ensure content and style images are of compatible sizes. The script resizes them automatically to 512x512 before NST.
-	•	Real-ESRGAN uses the RRDB-based ESRGAN model for super-resolution.
-	•	PyTorch CPU-only execution can be slower. GPU acceleration requires CUDA (not available on macOS by default).
+**⚠️ Notes**
+• Ensure content and style images are of compatible sizes. The script resizes them automatically to 512x512 before NST.
+• Real-ESRGAN uses the RRDB-based ESRGAN model for super-resolution.
+• PyTorch CPU-only execution can be slower. GPU acceleration requires CUDA (not available on macOS by default).
 
 ***
 
-📘 References
-	•	Neural Style Transfer — PyTorch Tutorial
-	•	Real-ESRGAN Repository
+**📘 References**
+
+• Neural Style Transfer — PyTorch Tutorial
+• Real-ESRGAN Repository
 
 ***
 
-👤 Author
+**👤 Author**
 
 Raghunandan M S<br>
 Data Scientist | AI Enthusiast<br>
