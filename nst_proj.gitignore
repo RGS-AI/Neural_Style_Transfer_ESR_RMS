@@ -10,7 +10,7 @@ venv/\
 env/\
 nst_upscale_env/\
 */site-packages/\
-__pycache__/\
+\
 *.pyc\
 .DS_Store\
 \
