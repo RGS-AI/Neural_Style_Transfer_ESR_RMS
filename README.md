@@ -116,7 +116,7 @@ nst_upscale_env/
 **📘 References**<br>
 
 • Neural Style Transfer — PyTorch Tutorial<br>
-• Real-ESRGAN Repository
+• Real-ESRGAN Repository - Credits of ESRGAN to xintaowang
 
 ***
 
