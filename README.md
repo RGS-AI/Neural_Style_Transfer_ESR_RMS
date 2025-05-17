@@ -59,7 +59,7 @@ nst_upscale_env/
 
 `cd style_transfer`
 
-`python NST.ipynb` #nst.py
+`python NST.ipynb`  #nst_model.py
 
 • This script will read content.jpg and style.jpg, then save the output as stylized_output.jpg.
 
@@ -77,12 +77,11 @@ nst_upscale_env/
 
 **Run Upscaler:**
 
-`cd upscaling`
+`cd ESRGAN`
 
-`python upscaler.py --input ../style_transfer/stylized_output.jpg --output output_4k.png --scale 4`
+`python3 test.py`
 
-• Output image will be saved as output_4k.png.
-• You can change the --scale to upscale by 2, 4, or 8 as per the model.
+• Output image will be saved as output in .png
 
 ***
 
@@ -106,16 +105,17 @@ nst_upscale_env/
 
 ***
 
-**⚠️ Notes**
-• Ensure content and style images are of compatible sizes. The script resizes them automatically to 512x512 before NST.
-• Real-ESRGAN uses the RRDB-based ESRGAN model for super-resolution.
-• PyTorch CPU-only execution can be slower. GPU acceleration requires CUDA (not available on macOS by default).
+**⚠️ Notes**<br>
+
+• Ensure content and style images are of compatible sizes. The script resizes them automatically to 512x512 before NST<br>
+• Real-ESRGAN uses the RRDB-based ESRGAN model for super-resolution<br>
+• PyTorch CPU-only execution can be slower. GPU acceleration requires CUDA (not available on macOS by default)<br>
 
 ***
 
-**📘 References**
+**📘 References**<br>
 
-• Neural Style Transfer — PyTorch Tutorial
+• Neural Style Transfer — PyTorch Tutorial<br>
 • Real-ESRGAN Repository
 
 ***
@@ -124,4 +124,4 @@ nst_upscale_env/
 
 Raghunandan M S<br>
 Data Scientist | AI Enthusiast<br>
-GitHub: github.com/
+GitHub: github.com/RGS-AI
